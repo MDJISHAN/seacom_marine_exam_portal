@@ -12,7 +12,7 @@ from .utils import account_activation_token
 from django.core.mail import EmailMessage
 import threading
 from django.contrib.auth.models import User
-from studentPreferences.models import StudentPreferenceModel
+from Exam.studentPreferences.models import StudentPreferenceModel
 from django.contrib.auth.models import Group
 
 @login_required(login_url='login')
