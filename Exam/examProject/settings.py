@@ -145,7 +145,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Exam', 'static')]  # optional, for dev
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # optional, for dev
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # where files will be collected
 
 
