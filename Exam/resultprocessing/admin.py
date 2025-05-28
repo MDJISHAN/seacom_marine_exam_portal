@@ -1,6 +1,6 @@
 from django.contrib import admin
 #from course.models import *
-from resultprocessing.models import *
+from Exam.resultprocessing.models import *
 # Register your models here.
 
 
