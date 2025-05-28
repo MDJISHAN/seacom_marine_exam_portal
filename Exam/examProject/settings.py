@@ -2,6 +2,8 @@ from pathlib import Path
 import os
 import pymysql
 import openpyxl
+import dj_database_url
+import os
 pymysql.install_as_MySQLdb()
 from django.contrib import messages
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -64,8 +66,7 @@ WSGI_APPLICATION = 'Exam.examProject.wsgi.application'
 
 
 # Database
-import dj_database_url
-import os
+
 
 DATABASES = {
     'default': dj_database_url.config(
@@ -74,15 +75,7 @@ DATABASES = {
 }
 
 #https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-'''DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Marine_Exam_Portal',
-        'USER': 'postgres',
-        'PASSWORD': 'Afreen@387',
-        'HOST': 'localhost',  # Replace with your PostgreSQL server's address if necessary
-        'PORT': '5432',          # Leave empty to use the default PostgreSQL port (usually 5432)
-    }
+
 }'''
 '''DATABASES = {
     'default': {
