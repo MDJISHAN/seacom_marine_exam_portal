@@ -1,8 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
-from student.models import *
-from admission.models import *
-from course.models import *
+from Exam.student.models import *
+from Exam.admission.models import *
+from Exam.course.models import *
 # Create your models here.
 
 class Student(models.Model):
