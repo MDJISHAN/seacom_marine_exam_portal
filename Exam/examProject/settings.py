@@ -32,8 +32,6 @@ INSTALLED_APPS = [
     'Exam.studentPreferences',
     'Exam.questions',
     'Exam.faculty',
-    'Exam.openpyxl',
-    'Exam.pandas',
 ]
 
 MIDDLEWARE = [
