@@ -1,6 +1,6 @@
 from django.db import models
 # from admission import models, views 
-from admission.models import *
+from Exam.admission.models import *
 
 from django.db import models
 
