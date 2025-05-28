@@ -17,3 +17,5 @@ pandas
 psycopg2
 dj-database-url
 dj-database-url
+gunicorn
+
