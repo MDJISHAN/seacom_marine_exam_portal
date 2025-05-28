@@ -2,11 +2,11 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from .models import *
 from django.contrib.auth.models import Group
-from student.models import *
+from Exam.student.models import *
 from django.utils import timezone
-from student.models import StuExam_DB,StuResults_DB
-from questions.questionpaper_models import QPForm
-from questions.question_models import QForm
+from Exam.student.models import StuExam_DB,StuResults_DB
+from Exam.questions.questionpaper_models import QPForm
+from Exam.questions.question_models import QForm
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 count=0
