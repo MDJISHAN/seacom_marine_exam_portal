@@ -8,3 +8,4 @@ tzdata==2025.2
 pymysql
 openpyxl
 pandas
+psycopg2
