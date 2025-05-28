@@ -18,10 +18,10 @@ from . import views
 from django.urls import path,include 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('student/',include('student.urls')),
-    path('faculty/',include('faculty.urls')),
-    path('student-pref/',include('studentPreferences.urls')),
-    path('exams/',include('questions.urls')),
+    path('student/',include('Exam.student.urls')),
+    path('faculty/',include('Exam.faculty.urls')),
+    path('student-pref/',include('Exam.studentPreferences.urls')),
+    path('exams/',include('Exam.questions.urls')),
     path('',views.index,name = "homepage")
 ]
 
