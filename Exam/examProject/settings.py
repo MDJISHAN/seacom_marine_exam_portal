@@ -64,8 +64,17 @@ WSGI_APPLICATION = 'Exam.examProject.wsgi.application'
 
 
 # Database
-#https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+import dj_database_url
+import os
+
 DATABASES = {
+    'default': dj_database_url.config(
+        default=os.environ.get('postgresql://seacom_marine_user:RvlwVOlXHazZEG3EK1skxD61D6eTTDKF@dpg-d0redpmmcj7s738704k0-a/seacom_marine')
+    )
+}
+
+#https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'Marine_Exam_Portal',
@@ -74,7 +83,7 @@ DATABASES = {
         'HOST': 'localhost',  # Replace with your PostgreSQL server's address if necessary
         'PORT': '5432',          # Leave empty to use the default PostgreSQL port (usually 5432)
     }
-}
+}'''
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
