@@ -42,7 +42,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'examProject.urls'
+ROOT_URLCONF = 'Exam.examProject.urls'
 
 TEMPLATES = [
     {
@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'examProject.wsgi.application'
+WSGI_APPLICATION = 'Exam.examProject.wsgi.application'
 
 
 # Database
@@ -141,7 +141,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'examProject/static')
+    os.path.join(BASE_DIR,'Exam.examProject/static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
