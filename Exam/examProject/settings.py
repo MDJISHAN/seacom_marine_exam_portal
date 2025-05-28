@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Exam.student',
-    'Exam.tuition',
+
     'Exam.course',
     'Exam.resultprocessing',
     'Exam.studentPreferences',
