@@ -8,10 +8,10 @@ from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMessage
 import threading
 from django.contrib.sites.shortcuts import get_current_site
-from student.views import EmailThread
+from Exam.student.views import EmailThread
 from django.contrib.auth.models import User
 from django.contrib.auth.models import Group
-from questions.views import has_group
+from Exam.questions.views import has_group
 
 @login_required(login_url='faculty-login')
 def index(request):
