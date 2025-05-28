@@ -67,10 +67,11 @@ WSGI_APPLICATION = 'Exam.examProject.wsgi.application'
 
 # Database
 
-
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('postgresql://seacom_marine_user:RvlwVOlXHazZEG3EK1skxD61D6eTTDKF@dpg-d0redpmmcj7s738704k0-a/seacom_marine')
+        default='postgresql://seacom_marine_user:RvlwVOlXHazZEG3EK1skxD61D6eTTDKF@dpg-d0redpmmcj7s738704k0-a/seacom_marine',
+        conn_max_age=600,
+        ssl_require=True
     )
 }
 
