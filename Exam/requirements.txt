@@ -10,3 +10,4 @@ openpyxl
 pandas
 psycopg2
 gunicorn
+whitenoise
