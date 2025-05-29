@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from . import views
-from student.views import check_superuser  # or whichever app you put it in
+from Exam.student.views import check_superuser  # or whichever app you put it in
 from django.urls import path,include 
 urlpatterns = [
     path('admin/', admin.site.urls),
