@@ -19,11 +19,14 @@ from student.views import check_superuser  # or whichever app you put it in
 from django.urls import path,include 
 urlpatterns = [
     path('admin/', admin.site.urls),
+     path('check_superuser/', check_superuser),
     path('student/',include('Exam.student.urls')),
     path('faculty/',include('Exam.faculty.urls')),
     path('student-pref/',include('Exam.studentPreferences.urls')),
     path('exams/',include('Exam.questions.urls')),
     path('',views.index,name = "homepage")
+   
+
 ]
 
 from django.conf import settings
