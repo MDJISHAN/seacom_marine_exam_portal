@@ -14,6 +14,8 @@ import threading
 from django.contrib.auth.models import User
 from Exam.studentPreferences.models import StudentPreferenceModel
 from django.contrib.auth.models import Group
+from django.http import HttpResponse
+from django.contrib.auth import get_user_model
 
 @login_required(login_url='login')
 def index(request):
@@ -151,8 +153,7 @@ class VerificationView(View):
 			raise e
 		return redirect('login')
 
-from django.http import HttpResponse
-from django.contrib.auth import get_user_model
+
 
 def check_superuser(request):
     User = get_user_model()
