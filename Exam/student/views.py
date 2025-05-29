@@ -150,4 +150,12 @@ class VerificationView(View):
 		except Exception as e:
 			raise e
 		return redirect('login')
+
+from django.http import HttpResponse
+from django.contrib.auth import get_user_model
+
+def check_superuser(request):
+    User = get_user_model()
+    admins = User.objects.filter(is_superuser=True)
+    return HttpResponse(", ".join([f"{user.username} ({user.email})" for user in admins]) or "No superusers found.")
 	
