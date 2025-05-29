@@ -15,8 +15,8 @@
     * {
 
       font-family: cursive;
-      color: #271a70;
-      background-color: white;
+      color:white;
+      background-color: #20B2AA;
 
     }
 
@@ -40,17 +40,10 @@
       margin-left: 5em;
     }
 
-    img {
-      position: absolute;
-      top: 50px;
-      left: 0;
-      height: 25em;
-      width: 100%;
-      /* transition: all 0.3s ease-in-out; */
-    }
+
 
     .prof button[type=submit]:hover {
-      background-color: #2EE59D;
+      background-color:skyblue;
       box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
       color: #fff;
       transform: translateY(-7px);
@@ -64,14 +57,40 @@
       transform: translateY(-7px);
 
     }
+  .logo-text {
+  display: flex;
+  align-items: center; /* Aligns logo and text vertically */
+}
+
+.logo {
+  width: 130px; /* adjust size as needed */
+  height: auto;
+  margin-right: 25px;
+}
+.home {
+  width: 100%; /* adjust size as needed */
+
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.text {
+  font-size: 38px;
+  font-weight: bold; /* Optional: makes it bold */
+  font-color:white;
+
+
+
   </style>
-  <nav class="navbar navbar-light" style="background-color:#49c5b6">
-    <a class="navbar-brand" style="color: white; padding-left: 5em;">
-      Welcome!
-    </a>
+     
+  <nav class="navbar navbar-light" style="background-color:while">
+<div class="logo-text">
+     <img src={% static 'img/logo.png' %} alt="logo" class="logo" style="vertical-align: middle;"/>
+      <span class="text"> SEACOM MARINE ONLINE EXAM PORTAL</span>
+</div>
   </nav>
+  <img src={% static 'img/home.jpeg' %} alt="logo" class="home" style="vertical-align: middle;"/>
   <div class="main">
-    <div class="abt">
+   <!-- <div class="abt">
       <br><br>
       <h1><u>Online Examination System</u></h1>
       <br>
@@ -88,16 +107,16 @@
         Online examination system has become popular for competitive examinations because of
         its unique features such as auto-evaluation, speed and accuracy. Moreover, it also helps environments
         by reducing the use of paper.
-      </h5>
+      </h5>-->
       <br><br>
       <div class="prof">
         <h2>Professor Section: </h2>
         <div class="row">
           <form method="get" action="{% url 'faculty-login' %}">
-            <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Login</button>
+            <button type="submit" class="btn btn-raised btn-lg" style="color: white">Login</button>
           </form>
           <form method="get" action="{% url 'faculty-register' %}">
-            <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Signup</button>
+            <button type="submit" class="btn btn-raised btn-lg" style="color: white">Signup</button>
           </form>
         </div>
       </div>
@@ -106,17 +125,16 @@
         <h2>Student Section: </h2>
         <div class="row">
           <form method="get" action="{% url 'login' %}">
-            <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Login</button>
+            <button type="submit" class="btn btn-raised btn-lg" style="color: white">Login</button>
           </form>
           <form method="get" action="{% url 'register' %}">
-            <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Signup</button>
+            <button type="submit" class="btn btn-raised btn-lg" style="color: white">Signup</button>
           </form>
         </div>
       </div>
     </div>
     <div class="img">
-      <!-- <img src="{% static 'img/ems.jpg' %}" alt="Exam Portal"> -->
-      <img src="https://i.ibb.co/S5H1frd/ems.jpg" alt=" Mmkay">
+   
     </div>
   </div>
   <hr>
