@@ -12,6 +12,8 @@ from Exam.student.views import EmailThread
 from django.contrib.auth.models import User
 from django.contrib.auth.models import Group
 from Exam.questions.views import has_group
+from django.contrib.auth.views import LogoutView
+
 
 @login_required(login_url='faculty-login')
 def index(request):
