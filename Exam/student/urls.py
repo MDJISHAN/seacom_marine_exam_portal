@@ -10,6 +10,8 @@ from .views import check_superuser
 
 urlpatterns = [
     path('',views.index,name = "index"),
+    path('logout/', auth_views.LogoutView.as_view(next_page='login'), name='logout'),
+
     path('register/',Register.as_view(),name="register"),
     path('login/',LoginView.as_view(),name="login"),
     path('logout/',LogoutView.as_view(),name="logout"),
