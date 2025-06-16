@@ -16,6 +16,8 @@ from Exam.studentPreferences.models import StudentPreferenceModel
 from django.contrib.auth.models import Group
 from django.http import HttpResponse
 from django.contrib.auth import get_user_model
+from django.contrib.auth.views import LogoutView
+
 
 @login_required(login_url='login')
 def index(request):
