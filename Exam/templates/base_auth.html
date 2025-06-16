@@ -14,6 +14,11 @@
   }
 
   </style>
+      <nav class="navbar navbar-light" style="background-color:rgb(135, 255, 253)">
+  <a href="{% url 'homepage' %}" style="color:#745959">Home</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
     {% block body %}
 
     {% endblock  %}
