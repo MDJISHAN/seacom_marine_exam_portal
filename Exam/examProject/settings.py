@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'Exam.examProject.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://seacom_marine_user:RvlwVOlXHazZEG3EK1skxD61D6eTTDKF@dpg-d0redpmmcj7s738704k0-a/seacom_marine',
+        default='postgresql://seacom_db_user:UcMw287tmz8rohpZWM1SmVcGT5ykOCqu@dpg-d26rcueuk2gs73ccoqdg-a/seacom_db',
         conn_max_age=600,
         ssl_require=True
     )
